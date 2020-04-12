@@ -1,0 +1,45 @@
+
+{% load static %}
+
+{% include "model-header.html" %}
+<link rel="stylesheet" href=" {% static 'bootstrap/css/login.css' %}">
+<body>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Sistema de Agendamento</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="submit" method="POST">
+                           {% csrf_token %}
+                            <h3 class="text-center text-info">SAC - Agendamento</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Usuário:</label><br>
+                                <input type="text" name="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Senha:</label><br>
+                                <input type="password" name="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-info"><span>Lembrar </span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                <input type="submit" name="submit" class="btn btn-info btn-md">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="#" class="text-info">Cadastrar Novo</a>
+                            </div>
+                        </form>
+                        {% for message in messages %}
+                        <div class="alert alert-danger alert-dismissible">
+                            <a href="/" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Erro !</strong> {{ message }}
+                        </div>                     
+                        {% endfor %}
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
