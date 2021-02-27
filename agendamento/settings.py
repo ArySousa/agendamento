@@ -68,7 +68,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bd_agendamento',
         'USER': 'root',
-        'PASSWORD': 'Ceof@ADM2020',
+        'PASSWORD': 'Poder0$07',
         'HOST': 'localhost',
         'PORT': '3306',
     }
