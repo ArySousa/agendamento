@@ -3,3 +3,5 @@
 bd_agendamento
 manager.py
 virtual/
+conf/agendamento.conf
+
