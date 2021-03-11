@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Arquivos Requirements Atualizado !!
+=======
+#Requeriments Update
+>>>>>>> 175049e58d164bb68478c7f094e8bfc4a42abd04
 asgiref==3.3.1
 Django==3.1.7
 mysqlclient==2.0.3
