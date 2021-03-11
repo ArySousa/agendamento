@@ -16,6 +16,7 @@ class Equipamento(models.Model):
     movimentacao = models.CharField(max_length=1, choices=EQUIP_CHOICES, blank=False, null=False)
     data_movimentacao = models.DateTimeField()
     data_criacao = models.DateTimeField(auto_now=True)
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.tipo
