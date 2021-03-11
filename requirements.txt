@@ -1,4 +1,4 @@
-
+#Arquivos Requirements Atualizado !!
 asgiref==3.3.1
 Django==3.1.7
 mysqlclient==2.0.3
